@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rubik's Cube Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rubik's Cube Visualizer</h1>
+  <div class="cube-wrapper">
+      <div class="cube" id="cube"></div>
+    </div>
+  <!-- <button id="steps-display" style="margin-top: 1rem; font-family: monospace;">steps</button> -->
+
+
+  <div class="controls">
+    <button id="scrambleBtn">Scramble</button>
+    <button id="solveBtn">Solve</button>
+  </div>
+
+  <script src="cube.js"></script>
+  <script>
+    document.getElementById("scrambleBtn").addEventListener("click", () => scramble());
+    document.getElementById("solveBtn").addEventListener("click", () => solve());
+    
+  </script>
+</body>
+</html>
